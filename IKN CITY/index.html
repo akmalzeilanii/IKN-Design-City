@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        canvas{
+            background-img:green;
+        }
+        img{
+            display: none;
+        }
+        button{
+            box-shadow: none;
+            border: 2px solid black;
+            font-weight: 600;
+            background-color: transparent;
+            padding: 10px;
+            margin: 10px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="createMap()">
+	<img src="img/background.png" alt="background" id="background-image" style="display: none;">
+    <img src="img/big-building/big-building-1.png" alt="img" id="big-building-1">
+    <img src="img/big-building/big-building-2.png" alt="img" id="big-building-2">
+    <img src="img/big-building/big-building-3.png" alt="img" id="big-building-3">
+    <img src="img/medium-building/medium-building-1.png" alt="img" id="medium-building">
+    <img src="img/small-building/small-building-1.png" alt="img" id="small-building">
+    <img src="img/houses/house.png" alt="img" id="house">
+    <button onclick="createMap()">Buat Ulang Map</button>
+    <canvas id="myCanvas"></canvas>
+    
+    <script src="main.js"></script>
+</body>
+</html>
